@@ -1,0 +1,39 @@
+Profiles:
+-	Stores name of user
+-	Stores list of foods user consumes, sections for adding meals or snacks. <Vector>
+	-	With each food, stores the amount typically consumed in that section, the typical number of meals per purchase of item, and the price of the item.
+		-	Can store which food by ID of food (MAKE SURE TO UPDATE WHEN DATABASE IS SORTED).
+		
+:From this info, the user profile will calculate the percentage of each nutrient per meal and per day.
+:If particular nutrient intake is low, will reccomend a food high in the deficient nutrient.
+
+
+
+
+string 			: Name 			stores users name/profile name.
+vector<Meals> 	: Meals			stores the different meals eaten throughout the day.
+vector<FoodAmnt>: TotFood		Stores the total amounts of foods eaten through the whole day.
+
+
+class Meal:
+	string				: Name				Name of meal
+	vector<FoodAmnt>	: MealFood			vector storing the foods 
+	
+	
+	struct FoodAmnt
+		int		: ID						Food ID
+		int		: amount					Number of servings
+		
+Functions:
+editMeal()		-		Edit the meal contents/name (adding foods here?)
+addMeal()		-		Add a meal.
+
+
+
+Foods to add:
+	Carrots		
+	Celery
+	Olives?
+	Eggs
+	
+	
